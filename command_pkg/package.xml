@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>command_pkg</name>
+  <version>0.0.0</version>
+  <description>The command_pkg package</description>
+
+  <maintainer email="jeremy.taquet@uca.fr">Jérémy Taquet</maintainer>
+
+  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+  <license>TODO</license>
+
+  <author email="jeremy.taquet@uca.fr">Jérémy Taquet</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>geometry_msgs</depend>
+  <!-- Use test_depend for packages you need only for testing: -->
+  <!--   <test_depend>gtest</test_depend> -->
+
+</package>
