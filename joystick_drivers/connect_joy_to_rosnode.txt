@@ -1,0 +1,14 @@
+1. Plug joypad via usb
+
+2. Check connection:
+	- 'ls /dev/input' must contain jsX
+	- use 'sudo jstest /dev/input/jsX' to identify which one is it
+	- use 'sudo chmod a+rw /dev/input/jsX' to configure the rights of the device
+	
+3. Launch ros, ...:
+	- 'roscore'
+	- 'rosparam set joy_node/dev "/dev/input/jsX"'
+	- 'rosrun joy joy_node
+	
+4. Check if it works:
+	- 'rostopic echo joy'
