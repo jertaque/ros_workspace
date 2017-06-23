@@ -26,8 +26,7 @@ int main (int argc, char** argv)
 		// Publish command
 		geometry_msgs::Twist command_message;	 			// Create the message
 		command_message.linear.x = vehicle_speed; 					// Fill the message with speed
-		//command_message.linear.y = vehicle_angular_speed;
-		command_message.point.z = vehicle_angular_speed;		// Fill the message with angular speed
+		command_message.linear.z = vehicle_angular_speed;		// Fill the message with angular speed
 		command_publisher.publish(command_message);	// Publish the message
 		
 		rate.sleep();	// Wait for next cycle
